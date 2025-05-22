@@ -4,7 +4,7 @@ CXXFLAGS = -O3 -Wall -fPIC -std=c++11 -Wno-write-strings \
            -Wno-strict-aliasing -Wno-unused-variable
 INCLUDES = -I.
 
-LIB_NAME = libsecp256k1_cpu.a
+LIB_NAME = libsecp256k1_wasm.a
 OBJ_DIR = obj_wasm
 
 SOURCES = secp256k1.cpp \

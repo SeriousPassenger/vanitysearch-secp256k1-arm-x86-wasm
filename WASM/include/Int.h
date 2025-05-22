@@ -220,8 +220,6 @@ static inline uint64_t _udiv128(uint64_t hi, uint64_t lo, uint64_t d, uint64_t *
   return q;
 }
 
-static inline uint64_t __rdtsc() { return 0; }
-
 #define __shiftright128(a,b,n) (((uint64_t)(a)>>(n))|((uint64_t)(b)<<(64-(n))))
 #define __shiftleft128(a,b,n)  (((uint64_t)(b)<<(n))|((uint64_t)(a)>>(64-(n))))
 
